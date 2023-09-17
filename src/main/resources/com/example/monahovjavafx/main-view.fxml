@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="216.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.monahovjavafx.Controller">
+    <TextField fx:id="textField1" layoutX="13.0" layoutY="46.0" prefHeight="26.0" prefWidth="186.0"
+               style="-fx-border-color: #000000;">
+        <cursor>
+          <Cursor fx:constant="DEFAULT"/>
+        </cursor>
+    </TextField>
+    <TextField fx:id="textField2" layoutX="15.0" layoutY="92.0" prefHeight="26.0" prefWidth="186.0"
+               style="-fx-border-color: #000000;"/>
+    <TextField fx:id="textField3" layoutX="15.0" layoutY="138.0" prefHeight="26.0" prefWidth="186.0"
+               style="-fx-border-color: #000000;"/>
+    <TextField fx:id="textField4" layoutX="16.0" layoutY="182.0" prefHeight="26.0" prefWidth="186.0"
+               style="-fx-border-color: #000000;"/>
+    <MenuBar minHeight="-Infinity" prefHeight="28.0" prefWidth="216.0" AnchorPane.leftAnchor="0.0"
+             AnchorPane.rightAnchor="0.0">
+        <Menu mnemonicParsing="false" text="Background">
+            <MenuItem fx:id="redMenuBGItem" mnemonicParsing="false" onAction="#setBackgroundRed" text="Red"/>
+            <MenuItem fx:id="blueMenuBGItem" mnemonicParsing="false" onAction="#setBackgroundBlue" text="Blue"/>
+            <MenuItem fx:id="greenMenuBGItem" mnemonicParsing="false" onAction="#setBackgroundGreen"
+                      text="Green"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Textfields">
+            <MenuItem fx:id="redMenuTFItem" mnemonicParsing="false" onAction="#setTextFieldsRed" text="Red"/>
+            <MenuItem fx:id="blueMenuTFItem" mnemonicParsing="false" onAction="#setTextFieldsBlue" text="Blue"/>
+            <MenuItem fx:id="greenMenuTFItem" mnemonicParsing="false" onAction="#setTextFieldsGreen"
+                      text="Green"/>
+        </Menu>
+    </MenuBar>
+</AnchorPane>
