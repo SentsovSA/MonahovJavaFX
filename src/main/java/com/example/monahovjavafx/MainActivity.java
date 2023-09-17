@@ -1,8 +1,6 @@
 package com.example.monahovjavafx;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -15,10 +13,11 @@ public class MainActivity extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainActivity.class.getResource("main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 216, 235);
         stage.setTitle("Lab3");
         stage.setScene(scene);
         stage.show();
+        stage.setResizable(false);
     }
 
     public static void main(String[] args) {
